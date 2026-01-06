@@ -6,23 +6,13 @@ class ExoMisc
         {
             Console.WriteLine("Make a selection:");
             var selection = int.Parse(Console.ReadLine() ?? "0");
-            string selectedStuff;
-
-            switch(selection)
+            string selectedStuff = selection switch
             {
-                case 1: 
-                    selectedStuff = "Café noir - 1,20€";
-                    break;
-                case 2: 
-                    selectedStuff = "Chocolat chaud - 1,50€";
-                    break;
-                case 3:
-                    selectedStuff = "Thé vers - 1,00€";
-                    break;
-                default:
-                    throw new Exception("Wrong choice !");
-            }
-
+                1 => "Café noir - 1,20€",
+                2 => "Chocolat chaud - 1,50€",
+                3 => "Thé vert - 1,00€",
+                _ => throw new Exception("Wrong choice !"),
+            };
             Console.WriteLine("Selected stuff: " + selectedStuff);
         }
         catch(Exception ex)
