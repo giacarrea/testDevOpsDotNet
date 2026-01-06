@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Launch (console) - Debug",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/App/bin/Debug/net8.0/App.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/App",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": ".NET Launch (console) - Run (no debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/App/bin/Debug/net8.0/App.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/App",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "noDebug": true
+    }
+  ]
+}

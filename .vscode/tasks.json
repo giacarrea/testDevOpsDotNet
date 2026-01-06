@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/App/App.csproj"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always" }
+    },
+    {
+      "label": "run",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/src/App/App.csproj"
+      ],
+      "group": "none",
+      "presentation": { "reveal": "always" }
+    }
+  ]
+}
