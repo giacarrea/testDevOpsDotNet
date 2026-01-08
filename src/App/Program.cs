@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design;
+using App;
 
 class Program
 {
@@ -25,6 +26,10 @@ class Program
     //     ExoBonk.BBANtoIBAN("123456789013"); // Attempt to convert invalid BBAN to IBAN
     //     ExoBonk.BBANtoIBAN("111111111111"); // Attempt to convert invalid BBAN to IBAN
     //     ExoBonk.BBANtoIBAN("987654321098"); // Attempt to convert invalid BBAN to IBAN
-        ExoRecap.ExoRecapMethod();
+        
+        //ExoRecap.ExoRecapMethod();
+
+        ExoStructs.DiagonalCoords();
+        ExoStructs.TemperatureStuff();
     }
 }
